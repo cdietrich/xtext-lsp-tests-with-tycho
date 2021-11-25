@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.xtext.example.mydsl</groupId>
+		<artifactId>org.xtext.example.mydsl.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>org.xtext.example.mydsl.tests</artifactId>
+	<packaging>eclipse-test-plugin</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.xtend</groupId>
+				<artifactId>xtend-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-surefire-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>false</extensions>
+				<configuration>
+					<useUIHarness>false</useUIHarness>
+					<useUIThread>false</useUIThread>
+					<includes>
+						<include>**/*Test.java</include>
+					</includes>
+					<redirectTestOutputToFile>true</redirectTestOutputToFile>
+					<runOrder>alphabetical</runOrder>
+					<testRuntime>default</testRuntime>
+					<argLine>-ea</argLine>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
