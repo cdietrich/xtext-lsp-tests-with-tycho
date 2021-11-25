@@ -8,16 +8,16 @@ public class DullyTest extends AbstractLanguageServerTest {
 	public DullyTest() {
 		super("mydsl");
 	}
-	
-	  @BeforeEach
-	  public void setup() {
-	    super.setup();
-	  }
-	  
-	  @AfterEach
-	  public void cleanup() {
-	    super.cleanup();
-	  }
+//	
+//	  @BeforeEach
+//	  public void setup() {
+//	    super.setup();
+//	  }
+//	  
+//	  @AfterEach
+//	  public void cleanup() {
+//	    super.cleanup();
+//	  }
 
 	@Test
 	public void testHover_01() {
