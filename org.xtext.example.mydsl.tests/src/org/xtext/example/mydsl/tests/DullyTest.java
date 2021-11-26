@@ -1,9 +1,9 @@
 package org.xtext.example.mydsl.tests;
-import org.eclipse.xtext.testing.AbstractLanguageServerTest;
-import org.eclipse.xtext.testing.HoverTestConfiguration;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.eclipse.xtext.testing.AbstractLanguageServerTest;
+import org.eclipse.xtext.testing.HoverTestConfiguration;
 public class DullyTest extends AbstractLanguageServerTest {
 	public DullyTest() {
 		super("mydsl");
